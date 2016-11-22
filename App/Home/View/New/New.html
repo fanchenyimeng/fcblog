@@ -1,0 +1,33 @@
+<foreach name="render" item="v">
+    <div class="portfolio-item">
+        <div class="portfolio-box">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <a href="{:U('news/'.$v['id'])}" class="btn-link">
+                        <h5>
+                            {$v.title}
+                        </h5>
+                    </a>
+                    <div class="small m-b-xs">
+                        <strong>{$v.blogauther}</strong> <span class="text-muted"><i class="fa fa-clock-o"></i>发布于：{$v.time|date='Y年m月d日 H:i:s',###}</span>
+                    </div>
+                    <p>
+                        {$v.summary}
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>标签：</h5>
+                            <button class="btn btn-primary btn-xs" type="button">{$v.tags}</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="small text-right">
+                                <h6>状态：</h6>
+                                <i class="fa fa-eye"> </i> {$v.click} 浏览
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</foreach>

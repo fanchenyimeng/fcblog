@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/App/Admin/Controller/BlogController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/Admin/Controller/CategoryController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/Admin/Controller/LoginController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/Admin/Controller/PhotoController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/Admin/Controller/SayController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/Admin/Controller/SystemController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/Common/Conf/title.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/Home/Controller/ListController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/Home/Controller/PhotoController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/Home/Controller/ShowController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/App/Home/View/List/index.html" charset="UTF-8" />
+  </component>
+</project>

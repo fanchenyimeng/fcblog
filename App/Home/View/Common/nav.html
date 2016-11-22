@@ -1,0 +1,63 @@
+
+</head>
+<body id="demopage" class="wow-animate">
+
+<!-- Site preloader -->
+<section id="preloader">
+    <div class="site-spinner"></div>
+</section>
+<!-- End Site preloader -->
+
+<!-- Page Wraper -->
+<div id="page-wraper">
+
+    <!-- Header -->
+    <header id="header" class="header header-dark">
+        <div class="header-inner">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="__APP__">
+                    <img class="logo-light" src="__HOMEIMG__/logo-light.png" alt="Apollo" />
+                    <img class="logo-dark" src="__HOMEIMG__/logo-dark.png" alt="Apollo" />
+                </a>
+            </div>
+            <!-- End Logo -->
+            <div class="nav-mobile nav-bar-icon">
+                <span></span>
+            </div>
+            <!-- Navbar Navigation -->
+            <div class="nav-menu singlepage-nav">
+                <ul class="nav-menu-inner">
+                    <li>
+                        <a class="external menu-has-sub" href="__ROOT__">首页</a>
+                    </li>
+                    <nav order="sort">
+                        <li>
+                            <a class="external menu-has-sub" href="{$url}">{$name}</a>
+                            <ul class="sub-dropdown dropdown">
+                                <foreach name="child" item="v">
+                                    <li>
+                                        <a class="menu-has-sub" href="{:U('/liunian/'.$v['id'])}">{$v.name}</a>
+                                    </li>
+                                </foreach>
+                            </ul>
+                        </li>
+                    </nav>
+                    <li><a href="" style="display:none;"></a></li>
+                    <li class="hidden-sm hidden-xs">
+                        <a class="external buy-now-btn btn-" href="{:U(MODULE_NAME.'/Message/index')}"><span class="btn btn-sm btn-white-outline">留言板</span></a>
+                    </li>
+                    <li class="hidden-md hidden-lg">
+                        <a class="external" href="{:U(MODULE_NAME.'/Message/index')}">留言板</a>
+                    </li>
+                    <li class="hidden-sm hidden-xs">
+                        <a class="external buy-now-btn btn-" href="{:U('login/index')}" target="_blank"><span class="btn btn-sm btn-white-outline">登录</span></a>
+                    </li>
+                    <li class="hidden-md hidden-lg">
+                        <a class="external" href="{:U(MODULE_NAME.'/Message/index')}" target="_blank">登录</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>

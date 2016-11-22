@@ -1,0 +1,1 @@
+a:6:{i:0;s:2:"id";i:1;s:4:"name";i:2;s:3:"pid";i:3;s:4:"sort";s:3:"_pk";s:2:"id";s:5:"_type";a:4:{s:2:"id";s:16:"int(10) unsigned";s:4:"name";s:8:"char(15)";s:3:"pid";s:16:"int(10) unsigned";s:4:"sort";s:11:"smallint(6)";}}

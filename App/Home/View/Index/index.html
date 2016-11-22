@@ -1,0 +1,61 @@
+<include file="Common:header"/>
+<include file="Common:nav"/>
+<!-- Intro -->
+<section id="intro" class="intro">
+    <!-- Static Intro -->
+    <div class="bg-image overlay-dark40 dark-bg parallax parallax-background2" data-background-img="Public{$Think.config.bgimg}">
+        <div class="js-fullscreen-height container" style="min-height: 400px;">
+            <div class="intro-content">
+
+                    <div class="intro-content-inner">
+                        <div class="avatar">
+                            <uif linit="1">
+                                <img src="{$iconpath}" alt="">
+                                <a href="#"><span>{$nickname}</span></a>
+                            </uif>
+                        </div>
+                        <!--<h5 class="alt-title intro-sub-title">Bootstrap Based Html Template</h5>-->
+                        <h1 class="intro-title mb-50">{$Think.config.hometxtone}<br>
+                            {$Think.config.hometxttwo}</h1>
+                        <h5 class="alt-title intro-sub-title mb-0">{$Think.config.hometxthree}</h5>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- intro Preview Section -->
+<section id="intro-variation" class="section-padding-n">
+    <div class="container text-center">
+        <h1 class="alt-title mb-45"><span class="page-title-underline">最新文章</span></h1>
+    </div>
+
+    <!-- 最新文章 -->
+    <div class="container">
+        <div class="rows portfolio-grid masonry">
+            {:W('New/render',array('limit'=>'6'))}<!--widget工具读取最新发布博文-->
+        </div>
+    </div>
+    <!-- End Portfolio -->
+
+</section>
+<!-- End intro Preview Section -->
+
+<hr/>
+<section id="intro-variation" class="section-padding-p">
+    <div class="container text-center">
+        <h1 class="alt-title mb-45"><span class="page-title-underline">最新照片</span></h1>
+    </div>
+        <div class="ibox-content picture-main">
+            <photo limit="24">
+            <a class="fancybox" data-fancybox-group="thumb" href="__APP__/Public{$img_path}" title="{$img_content}">
+                <img alt="image" src="__APP__/Public{$img_path}"/>
+            </a>
+            </photo>
+        </div>
+</section>
+<hr/>
+<include file="Common:bottom"/>
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>随拍</title>
+    <!--[if IE]>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <!-- Css -->
+    <link href="__HOMECSS__/style.css" rel="stylesheet" type="text/css"/>
+    <link href="__HOMECSS__/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="__HOMECSS__/font-awesome.min.css-v=4.4.0.css" rel="stylesheet" type="text/css"/>
+    <link href="__HOMECSS__/animate.css" rel="stylesheet" type="text/css"/>
+    <!--doing页-->
+    <link href="__HOMECSS__/animate.min.css" rel="stylesheet">
+    <link href="__HOMECSS__/style.min.css-v=4.0.0.css" rel="stylesheet">
+    <!-- Favicone Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="__HOMECSS__/favicon.ico"/>
+    <link rel="icon" type="image/png" href="__HOMECSS__/favicon.png"/>
+    <link rel="apple-touch-icon" href="__HOMECSS__/favicon.png"/>
+    <link href="__ADMINCSS__/style.min.css-v=4.0.0.css" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<!-- Site preloader -->
+<section id="preloader">
+    <div class="site-spinner"></div>
+</section>
+<div id="page-wraper">
+    <!-- Header -->
+    <header id="header" class="header header-dark">
+        <div class="header-inner">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="__APP__">
+                    <img class="logo-light" src="__HOMEIMG__/logo-light.png" alt="Apollo"/>
+                    <img class="logo-dark" src="__HOMEIMG__/logo-dark.png" alt="Apollo"/>
+                </a>
+            </div>
+            <!-- End Logo -->
+
+            <!-- Mobile Navbar Icon -->
+            <div class="nav-mobile nav-bar-icon">
+                <span></span>
+            </div>
+            <!-- End Mobile Navbar Icon -->
+
+            <!-- Navbar Navigation -->
+            <div class="nav-menu singlepage-nav">
+                <ul class="nav-menu-inner">
+                    <li>
+                        <a class="external menu-has-sub" href="__ROOT__">首页</a>
+                    </li>
+                    <nav order="sort">
+                        <li>
+                            <a class="external menu-has-sub" href="{$url}">{$name}</a>
+                            <ul class="sub-dropdown dropdown">
+                                <foreach name="child" item="v">
+                                    <li>
+                                        <a class="menu-has-sub" href="{:U('/liunian/'.$v['id'])}">{$v.name}</a>
+                                    </li>
+                                </foreach>
+                            </ul>
+                        </li>
+                    </nav>
+                    <li><a href="" style="display:none;"></a></li>
+                    <li class="hidden-sm hidden-xs">
+                        <a class="external buy-now-btn btn-" href="{:U(MODULE_NAME.'/Message/index')}"><span
+                                class="btn btn-sm btn-white-outline">留言板</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Navbar Navigation -->
+        </div>
+    </header>
+
+    <div class="hero overlay-dark40"></div>
+    <div class="row">
+        <section id="intro-variation" class="section-padding">
+            <div class="col-sm-12 photo-w">
+                <div class="container">
+                    <phocate limit="100">
+                        <div class="col-sm-2 p-width" data-animation="pulse" >
+                            <a href="{:U('/Photo/Viewp',array('id'=>$id))}">
+                                <div class="widget-head-color-box navy-bg p-img">
+                                    <img src="__ROOT__/{$imgbg}" class="img-photo">
+                                </div>
+                            </a>
+                            <div class="widget-text-box">
+                                <div>
+                                    <span>{$photonum} 张</span>
+                                </div>
+
+                                <input type="hidden" name="id" value="{$v.id}">
+                                <h4 class="media-heading"><a href="{:U('/Photo/Viewp',array('id'=>$id))}">{$img_cate_name}</a></h4>
+                            </div>
+                        </div>
+                    </phocate>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<script src="__HOMEJS__/jquery-2.1.4.min.js"></script>
+<script src="__HOMEJS__/bootstrap.min.js-v=3.3.5"></script>
+<script src="__HOMEJS__/content.min.js-v=1.0.0"></script>
+
+<include file="Common:bottom"/>
